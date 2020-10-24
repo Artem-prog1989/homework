@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ex№5
+        var arr = [];
+        for(var i=1; i<=20; i++) {
+            arr.push("x");
+            console.log(arr);
+        }
+        //ex5 вариант 2
+        var a = "";
+        for(var i=1; i<=20; i++) {
+            a+="x"
+            console.log(a);
+        }
+        //ex 1
+var num = 2; 
+while (num <= 100) {
+    var prime = true;
+    var divider = 2;
+
+    while (divider < num) {
+        if (num % divider == 0) {
+            prime = false;
+            break;
+         }
+        divider++;
+        }
+   if (prime) {
+   console.log(" " + num);
+   }
+
+   num++
+}
+//ex № 4
+        for(var i=0; i<=9; console.log(i), i++) {
+            
+        }
+//ex #2
+    var alkoMarafonBasket=[
+        {
+            title: "vodka",
+            price:150,
+            quantity:300
+            
+        },
+        
+        {
+            title:"beer", 
+            price:50,
+            quantity:600
+        },
+        
+        {
+            title:"brandy",
+            price:800,
+            quantity:140
+            
+        }
+        
+    ];
+        function countBasketPrice (mas) {
+            var sum = 0;
+            for (item of mas) {
+                sum += item.price*item.quantity;
+            }
+            return sum;
+        }
+        console.log(countBasketPrice(alkoMarafonBasket));
+    </script>
+</body>
+</html>
